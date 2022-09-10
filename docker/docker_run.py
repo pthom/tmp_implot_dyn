@@ -6,7 +6,7 @@ import sys
 
 INVOKE_DIR = os.getcwd()
 THIS_DIR = os.path.dirname(os.path.realpath(__file__))
-REPO_DIR = os.path.realpath(THIS_DIR + "/../..")
+REPO_DIR = os.path.realpath(THIS_DIR + "/..")
 DOCKER_IMAGE_NAME = "implot_dyn_image"
 DOCKER_CONTAINER_NAME = "implot_dyn"
 SOURCES_MOUNT_DIR = "/dvp/sources"

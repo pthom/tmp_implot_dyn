@@ -20,4 +20,5 @@ RUN mkdir ~/.vnc &&\
     apt-get install -y libglapi-mesa
 
 # Install libs required by immvision
-# RUN apt-get install -y libopencv-dev libsdl2-dev libgl1-mesa-dev
+RUN apt-get install -y libglfw3-dev libgl1-mesa-dev xorg-dev
+
