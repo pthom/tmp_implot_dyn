@@ -36,3 +36,18 @@ int main(int, char**)
 
 ````
 
+The link fails with the error "undefined reference to `void ImPlot::PlotLine<long>(char const*, long const*, int, double, double, int, int, int)`".
+
+See for example
+https://github.com/pthom/tmp_implot_dyn/runs/8284252337?check_suite_focus=true
+
+````
+[100%] Linking CXX executable sample_implot_imgui
+/usr/bin/ld: CMakeFiles/sample_implot_imgui.dir/sample_implot_imgui.cpp.o: in function `MyPlotHandler::Draw()':
+sample_implot_imgui.cpp:(.text._ZN13MyPlotHandler4DrawEv[_ZN13MyPlotHandler4DrawEv]+0x84): undefined reference to `void ImPlot::PlotLine<long>(char const*, long const*, int, double, double, int, int, int)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/sample_implot_imgui.dir/build.make:101: sample_implot_imgui] Error 1
+make[1]: *** [CMakeFiles/Makefile2:176: CMakeFiles/sample_implot_imgui.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+Error: Process completed with exit code 2.
+````
