@@ -51,3 +51,9 @@ make[1]: *** [CMakeFiles/Makefile2:176: CMakeFiles/sample_implot_imgui.dir/all] 
 make: *** [Makefile:136: all] Error 2
 Error: Process completed with exit code 2.
 ````
+
+##### Build instructions
+
+````bash
+mkdir build && cd build && cmake .. && make 
+````
