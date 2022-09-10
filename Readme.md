@@ -1,4 +1,4 @@
-Sample repository to help work on implot PR https://github.com/epezent/implot/pull/397
+Temporary repository to help work on implot PR https://github.com/epezent/implot/pull/397
 
 This is a standard setup of imgui + implot sample, using GLFW + OpenGL3.
 
