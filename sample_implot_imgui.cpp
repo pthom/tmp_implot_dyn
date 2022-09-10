@@ -33,7 +33,7 @@ struct MyPlotHandler
     ~MyPlotHandler() { ImPlot::DestroyContext(mContext); }
     void Draw()
     {
-        static int values[] = {1, 3, 5, 7};
+        static long values[] = {1, 3, 5, 7};
         ImPlot::BeginPlot("a");
         ImPlot::PlotLine("s", values, 4);
         ImPlot::EndPlot();
